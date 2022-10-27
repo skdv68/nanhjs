@@ -4,6 +4,10 @@ import typography, { globalTypo } from './stitches.typography';
 import sizes from './stitches.sizes';
 import color from './stitches.color';
 import utils from './stitches.utils';
+import {
+  mintA,
+  violet
+} from "@radix-ui/colors"
 
 export const {
   styled,
@@ -16,7 +20,10 @@ export const {
   config,
 } = createStitches({
   theme: {
-    ...color,
+    colors: {
+      ...mintA,
+      ...violet
+    },
     ...sizes,
     ...typography,
   },
