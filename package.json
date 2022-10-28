@@ -1,18 +1,9 @@
 {
 	"name": "nanhjs",
-	"version": "0.1.4",
+	"version": "0.1.6",
 	"private": false,
 	"dependencies": {
-		"@radix-ui/colors": "^0.1.8",
-		"@stitches/react": "^1.2.8",
-		"@types/jest": "^27.0.1",
-		"@types/node": "^16.7.13",
-		"@types/react": "^18.0.0",
-		"@types/react-dom": "^18.0.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-scripts": "5.0.1",
-		"typescript": "^4.4.2"
+
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -76,7 +67,17 @@
 		"rollup-plugin-peer-deps-external": "^2.2.4",
 		"rollup-plugin-scss": "^3.0.0",
 		"rollup-plugin-terser": "^7.0.2",
-		"webpack": "^5.74.0"
+		"webpack": "^5.74.0",
+    "@radix-ui/colors": "^0.1.8",
+		"@stitches/react": "^1.2.8",
+		"@types/jest": "^27.0.1",
+		"@types/node": "^16.7.13",
+		"@types/react": "^18.0.0",
+		"@types/react-dom": "^18.0.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-scripts": "5.0.1",
+		"typescript": "^4.4.2"
 	},
 	"main": "dist/index.js",
 	"module": "dist/index.es.js",
