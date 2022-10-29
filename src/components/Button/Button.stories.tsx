@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../components/Button/Button";
+import Button from "./Button";
 import { LightningBoltIcon } from "@radix-ui/react-icons"
 
 export default {
