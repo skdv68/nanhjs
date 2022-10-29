@@ -26,15 +26,7 @@ export const {
     },
     ...sizes,
     ...typography,
-  },
-  media: {
-    mobile: '(max-width: 550px)',
-    tablet: '(max-width: 1100px)',
-    laptop: '(max-width: 1450px)',
-  },
-  utils: {
-    ...utils,
-  },
+  }
 });
 
 export const darkTheme = createTheme({

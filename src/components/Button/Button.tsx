@@ -1,12 +1,11 @@
 import React, { forwardRef, ReactNode } from "react";
 
-import { styled, globalStyle } from "../../design/stitches.config"
+
+import { styled } from "../../design/stitches.config"
 
 // type ButtonProps = JSX.IntrinsicElements["button"];
 type Props = React.ComponentProps<typeof StyledButton>;
 const Button: React.FC<Props> = ({ ...props }) => {
-  globalStyle()
-
   return (<StyledButton {...props}>
     {props.children}
   </StyledButton>)
@@ -15,6 +14,7 @@ const Button: React.FC<Props> = ({ ...props }) => {
 
 
 const StyledButton = styled("button", {
+  boxSizing: "border-box",
   padding: "$x2 $x3",
   background: "$violet9",
   color: "$violet1",
@@ -49,6 +49,34 @@ const StyledButton = styled("button", {
           cursor: "pointer"
         },
       },
+      disabled: {
+        opacity: 0.7,
+        background: "white",
+        border: "1px solid $violet11",
+        color: "$violet11",
+        "&:hover": {
+          background: "white",
+          cursor: "not-allowed"
+        },
+      },
+      disabledPrimary: {
+        opacity: 0.7,
+        "&:hover": {
+          background: "$violet9",
+          cursor: "not-allowed"
+        },
+      }
+    },
+    content: {
+      text: {
+
+      },
+      icon: {
+        display: "grid",
+        placeItems: "center",
+        padding: "$x2 $x2",
+        borderRadius: 9999,
+      }
     }
   }
 })
