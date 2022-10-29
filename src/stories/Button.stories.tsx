@@ -45,4 +45,17 @@ export const ButtonIconPrimary = () => {
   return (<Button content="icon" mode="primary"><LightningBoltIcon /></Button>)
 }
 
+export const Temp = () => {
+  const ref = React.createRef<HTMLButtonElement>();
+  React.useEffect(() => {
+    if (ref.current) {
+      ref.current.click();
+    }
+  }, [])
+  return (<Button ref={ref} content="icon" mode="primary" onClick={() => {
+    console.log("click from ref")
+  }}><LightningBoltIcon /></Button>)
+
+}
+
 

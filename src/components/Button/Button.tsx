@@ -1,15 +1,13 @@
-import React, { forwardRef, ReactNode } from "react";
-
-
+import React, { forwardRef } from "react";
 import { styled } from "../../design/stitches.config"
 
-// type ButtonProps = JSX.IntrinsicElements["button"];
 type Props = React.ComponentProps<typeof StyledButton>;
-const Button: React.FC<Props> = ({ ...props }) => {
-  return (<StyledButton {...props}>
+
+const Button: React.FC<Props> = forwardRef<HTMLButtonElement, Props>((props, ref) => {
+  return (<StyledButton ref={ref} {...props}>
     {props.children}
   </StyledButton>)
-}
+})
 
 
 
