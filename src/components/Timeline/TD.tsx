@@ -15,7 +15,7 @@ const TD = styled("td", {
         padding: "$x2",
         fontWeight: "$bold",
         zIndex: 1,
-        background: "$violet6",
+        background: "white",
         color: "$white",
         width: "100%",
         justifyContent: "center",
@@ -24,7 +24,7 @@ const TD = styled("td", {
       sticky: {
         position: "sticky",
         padding: "$x2",
-        background: "$violet6",
+        background: "white",
         color: "$white",
         textAlign: "left",
         zIndex: 1,
@@ -34,7 +34,7 @@ const TD = styled("td", {
       },
       time: {
         borderRight: "1px solid black",
-        background: "$violet6",
+        background: "white",
         color: "$white",
         wordWrap: "break-word",
         whiteSpace: "nowrap",

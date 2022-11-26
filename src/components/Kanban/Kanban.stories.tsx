@@ -4,10 +4,13 @@ import React from 'react'
 import Board from "./Board";
 import dayjs from 'dayjs';
 
+
 export default {
   title: "Components/Kanban",
   component: Board,
 };
+
+
 
 export const KanbanBoard = () => <Board title={"SKDV"} columns={
   {

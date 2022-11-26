@@ -126,25 +126,24 @@ const Timeline: React.FC<Props> = ({ columns }) => {
 const Wrapper = styled("div", {
   display: "flex",
   flexDirection: "column",
-  borderRadius: "4px",
+  borderRadius: "$borderRadius$br",
   border: "2px solid black",
-  boxShadow: " rgba(149, 157, 165, 0.2) 0px 8px 24px",
-  padding: '$x2',
-  overflow: 'hidden',
+  boxShadow: "$color$boxShadow",
+  position: "relative",
+  overflow: "clip"
 })
 
 const Table = styled("table", {
   position: "relative",
   borderCollapse: "collapse",
-  overflow: "auto !important",
   flexGrow: 1,
   border: "1px solid #666",
 })
 const THead = styled("thead", {})
 const TBody = styled("tbody", {
   width: 10000,
-  overflow: "scroll"
-
+  overflow: "scroll",
+  position: "relative",
 })
 const TH = styled("th", {})
 
